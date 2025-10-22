@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(255, 195, 131);
+        }
+
+        header,
+        footer {
+            background-color: rgb(140, 66, 1);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        button {
+            padding: 10px 40px;
+            flex-grow: 1;
+            background-color: bisque;
+            border-color: lightgrey;
+        }
+
+        .cards {
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            box-shadow: 5px 5px 20px bisque;
+            background-color: blanchedalmond;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+        }
+
+        .card button {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .card p {
+            padding: 10px;
+        }
+
+        .main {
+            height: 100vh;
+            flex-grow: 1;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+        }
+
+        @media screen and (max-width:600px) {
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Power Grid: Store or HomePage</h2>
+    </header>
+    <section class="buttons">
+        <button>Home</button>
+        <button>About </button>
+        <button>Services</button>
+        <button>Career</button>
+        <button>Contact us</button>
+    </section>
+    <section class="main">
+        <div class="cards">
+            <div class="card">
+                <img src="drinks-2592848_1280.jpg" alt="ice coffee">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eaque rerum ab molestias
+                    nesciunt. Corrupti dolorum, ducimus at dolores libero quam laborum et ea! Perspiciatis inventore
+                    nobis debitis corrupti dignissimos!</p>
+                <button>menu</button>
+            </div>
+            <div class="card">
+                <img src="ice-coffee-2546041_1280.jpg" alt="ice coffee">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eaque rerum ab molestias
+                    nesciunt. Corrupti dolorum, ducimus at dolores libero quam laborum et ea! Perspiciatis inventore
+                    nobis debitis corrupti dignissimos!</p>
+                <button>menu</button>
+            </div>
+            <div class="card">
+                <img src="iced-coffee-2710815_1280.jpg" alt="ice coffee">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eaque rerum ab molestias
+                    nesciunt. Corrupti dolorum, ducimus at dolores libero quam laborum et ea! Perspiciatis inventore
+                    nobis debitis corrupti dignissimos!</p>
+                <button>menu</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Power Grid: Store or HomePage</h2>
+    </footer>
+</body>
+
+</html>
